@@ -58,7 +58,8 @@ data Country
   | Cocos_Islands
   | Colombia
   | Comoros
-  | Congo
+  | Democratic_Republic_of_the_Congo
+  | Republic_of_the_Congo
   | Cook_Islands
   | Costa_Rica
   | Cote_dIvoire
@@ -245,6 +246,7 @@ data Country
   | Vanuatu
   | Venezuela
   | Vietnam
+  | British_Virgin_Islands
   | Virgin_Islands
   | Wallis_and_Futuna
   | Yemen
@@ -254,6 +256,8 @@ data Country
 
 derive instance Eq Country
 derive instance Ord Country
+instance Show Country where
+  show x = countryToString x
 
 countryToString :: Country -> String
 countryToString country =
@@ -262,7 +266,7 @@ countryToString country =
     Aland_Islands -> "Aland Islands"
     Albania -> "Albania"
     Algeria -> "Algeria"
-    American_Samoa -> "AmericanSamoa"
+    American_Samoa -> "American Samoa"
     Andorra -> "Andorra"
     Angola -> "Angola"
     Anguilla -> "Anguilla"
@@ -289,6 +293,7 @@ countryToString country =
     Botswana -> "Botswana"
     Brazil -> "Brazil"
     British_Indian_Ocean_Territory -> "British Indian Ocean Territory"
+    British_Virgin_Islands -> "British Virgin Islands"
     Brunei -> "Brunei Darussalam"
     Bulgaria -> "Bulgaria"
     Burkina_Faso -> "Burkina Faso"
@@ -306,7 +311,8 @@ countryToString country =
     Cocos_Islands -> "Cocos (Keeling) Islands"
     Colombia -> "Colombia"
     Comoros -> "Comoros"
-    Congo -> "Congo"
+    Democratic_Republic_of_the_Congo -> "Democratic Republic of the Congo"
+    Republic_of_the_Congo -> "Republic of the Congo"
     Cook_Islands -> "Cook Islands"
     Costa_Rica -> "Costa Rica"
     Cote_dIvoire -> "Cote d'Ivoire"
@@ -534,6 +540,7 @@ stringToCountry country =
     "Botswana" -> Botswana
     "Brazil" -> Brazil
     "British Indian Ocean Territory" -> British_Indian_Ocean_Territory
+    "British Virgin Islands" -> British_Virgin_Islands
     "Brunei Darussalam" -> Brunei
     "Bulgaria" -> Bulgaria
     "Burkina Faso" -> Burkina_Faso
@@ -551,7 +558,8 @@ stringToCountry country =
     "Cocos (Keeling) Islands" -> Cocos_Islands
     "Colombia" -> Colombia
     "Comoros" -> Comoros
-    "Congo" -> Congo
+    "Democratic Republic of the Congo" -> Democratic_Republic_of_the_Congo
+    "Republic of the Congo" -> Republic_of_the_Congo
     "Cook Islands" -> Cook_Islands
     "Costa Rica" -> Costa_Rica
     "Cote d'Ivoire" -> Cote_dIvoire
@@ -745,11 +753,258 @@ stringToCountry country =
     "Zimbabwe" -> Zimbabwe
     other -> Other other
 
+codeStringToCountry :: String -> Country
+codeStringToCountry str =
+  case str of
+    "AF" -> Afghanistan
+    "AX" -> Aland_Islands
+    "AL" -> Albania
+    "DZ" -> Algeria
+    "AS" -> American_Samoa
+    "AD" -> Andorra
+    "AO" -> Angola
+    "AI" -> Anguilla
+    "AQ" -> Antarctica
+    "AG" -> Antigua_and_Barbuda
+    "AR" -> Argentina
+    "AM" -> Armenia
+    "AW" -> Aruba
+    "AU" -> Australia
+    "AT" -> Austria
+    "AZ" -> Azerbaijan
+    "BS" -> Bahamas
+    "BH" -> Bahrain
+    "BD" -> Bangladesh
+    "BB" -> Barbados
+    "BY" -> Belarus
+    "BE" -> Belgium
+    "BZ" -> Belize
+    "BJ" -> Benin
+    "BM" -> Bermuda
+    "BT" -> Bhutan
+    "BO" -> Bolivia
+    "BA" -> Bosnia_and_Herzegovina
+    "BW" -> Botswana
+    "BR" -> Brazil
+    "IO" -> British_Indian_Ocean_Territory
+    "BN" -> Brunei
+    "BG" -> Bulgaria
+    "BF" -> Burkina_Faso
+    "BI" -> Burundi
+    "KH" -> Cambodia
+    "CM" -> Cameroon
+    "CA" -> Canada
+    "CV" -> Cape_Verde
+    "KY" -> Cayman_Islands
+    "CF" -> Central_African_Republic
+    "TD" -> Chad
+    "CL" -> Chile
+    "CN" -> China
+    "CX" -> Christmas_Island
+    "CC" -> Cocos_Islands
+    "CO" -> Colombia
+    "KM" -> Comoros
+    "CD" -> Democratic_Republic_of_the_Congo
+    "CG" -> Republic_of_the_Congo
+    "CK" -> Cook_Islands
+    "CR" -> Costa_Rica
+    "CI" -> Cote_dIvoire
+    "HR" -> Croatia
+    "CU" -> Cuba
+    "CY" -> Cyprus
+    "CZ" -> Czech_Republic
+    "DK" -> Denmark
+    "DJ" -> Djibouti
+    "DM" -> Dominica
+    "DO" -> Dominican_Republic
+    "EC" -> Ecuador
+    "EG" -> Egypt
+    "SV" -> El_Salvador
+    "GQ" -> Equatorial_Guinea
+    "ER" -> Eritrea
+    "EE" -> Estonia
+    "ET" -> Ethiopia
+    "FK" -> Falkland_Islands
+    "FO" -> Faroe_Islands
+    "FJ" -> Fiji
+    "FI" -> Finland
+    "FR" -> France
+    "GF" -> French_Guiana
+    "PF" -> French_Polynesia
+    "GA" -> Gabon
+    "GM" -> Gambia
+    "GE" -> Georgia
+    "DE" -> Germany
+    "GH" -> Ghana
+    "GI" -> Gibraltar
+    "GR" -> Greece
+    "GL" -> Greenland
+    "GD" -> Grenada
+    "GP" -> Guadeloupe
+    "GU" -> Guam
+    "GT" -> Guatemala
+    "GG" -> Guernsey
+    "GN" -> Guinea
+    "GW" -> Guinea_Bissau
+    "GY" -> Guyana
+    "HT" -> Haiti
+    "VA" -> Vatican
+    "HN" -> Honduras
+    "HK" -> Hong_Kong
+    "HU" -> Hungary
+    "IS" -> Iceland
+    "IN" -> India
+    "ID" -> Indonesia
+    "IR" -> Iran
+    "IQ" -> Iraq
+    "IE" -> Ireland
+    "IM" -> Isle_of_Man
+    "IL" -> Israel
+    "IT" -> Italy
+    "JM" -> Jamaica
+    "JP" -> Japan
+    "JE" -> Jersey
+    "JO" -> Jordan
+    "KZ" -> Kazakhstan
+    "KE" -> Kenya
+    "KI" -> Kiribati
+    "KP" -> North_Korea
+    "KR" -> South_Korea
+    "KW" -> Kuwait
+    "KG" -> Kyrgyzstan
+    "LA" -> Laos
+    "LV" -> Latvia
+    "LB" -> Lebanon
+    "LS" -> Lesotho
+    "LR" -> Liberia
+    "LY" -> Libya
+    "LI" -> Liechtenstein
+    "LT" -> Lithuania
+    "LU" -> Luxembourg
+    "MO" -> Macao
+    "MK" -> Macedonia
+    "MG" -> Madagascar
+    "MW" -> Malawi
+    "MY" -> Malaysia
+    "MV" -> Maldives
+    "ML" -> Mali
+    "MT" -> Malta
+    "MH" -> Marshall_Islands
+    "MQ" -> Martinique
+    "MR" -> Mauritania
+    "MU" -> Mauritius
+    "YT" -> Mayotte
+    "MX" -> Mexico
+    "FM" -> Micronesia
+    "MD" -> Moldova
+    "MC" -> Monaco
+    "MN" -> Mongolia
+    "ME" -> Montenegro
+    "MS" -> Montserrat
+    "MA" -> Morocco
+    "MZ" -> Mozambique
+    "MM" -> Myanmar
+    "NA" -> Namibia
+    "NR" -> Nauru
+    "NP" -> Nepal
+    "NL" -> Netherlands
+    "AN" -> Netherlands_Antilles
+    "NC" -> New_Caledonia
+    "NZ" -> New_Zealand
+    "NI" -> Nicaragua
+    "NE" -> Niger
+    "NG" -> Nigeria
+    "NU" -> Niue
+    "NF" -> Norfolk_Island
+    "MP" -> Northern_Mariana_Islands
+    "NO" -> Norway
+    "OM" -> Oman
+    "PK" -> Pakistan
+    "PW" -> Palau
+    "PS" -> Palestinian_Territory
+    "PA" -> Panama
+    "PG" -> Papua_New_Guinea
+    "PY" -> Paraguay
+    "PE" -> Peru
+    "PH" -> Philippines
+    "PN" -> Pitcairn
+    "PL" -> Poland
+    "PT" -> Portugal
+    "PR" -> Puerto_Rico
+    "QA" -> Qatar
+    "RO" -> Romania
+    "RU" -> Russia
+    "RW" -> Rwanda
+    "RE" -> Reunion
+    "BL" -> Saint_Barthelemy
+    "SH" -> Saint_Helena
+    "KN" -> Saint_Kitts
+    "LC" -> Saint_Lucia
+    "MF" -> Saint_Martin
+    "PM" -> Saint_Pierre_and_Miquelon
+    "VC" -> Saint_Vincent
+    "WS" -> Samoa
+    "SM" -> San_Marino
+    "ST" -> Sao_Tome_and_Principe
+    "SA" -> Saudi_Arabia
+    "SN" -> Senegal
+    "RS" -> Serbia
+    "SC" -> Seychelles
+    "SL" -> Sierra_Leone
+    "SG" -> Singapore
+    "SK" -> Slovakia
+    "SI" -> Slovenia
+    "SB" -> Solomon_Islands
+    "SO" -> Somalia
+    "ZA" -> South_Africa
+    "SS" -> South_Sudan
+    "GS" -> South_Georgia
+    "ES" -> Spain
+    "LK" -> Sri_Lanka
+    "SD" -> Sudan
+    "SR" -> Suriname
+    "SJ" -> Svalbard
+    "SZ" -> Swaziland
+    "SE" -> Sweden
+    "CH" -> Switzerland
+    "SY" -> Syrian_Arab_Republic
+    "TW" -> Taiwan
+    "TJ" -> Tajikistan
+    "TZ" -> Tanzania
+    "TH" -> Thailand
+    "TL" -> Timor_Leste
+    "TG" -> Togo
+    "TK" -> Tokelau
+    "TO" -> Tonga
+    "TT" -> Trinidad_and_Tobago
+    "TN" -> Tunisia
+    "TR" -> Turkey
+    "TM" -> Turkmenistan
+    "TC" -> Turks_and_Caicos_Islands
+    "TV" -> Tuvalu
+    "UG" -> Uganda
+    "UA" -> Ukraine
+    "AE" -> United_Arab_Emirates
+    "GB" -> United_Kingdom
+    "US" -> United_States
+    "UY" -> Uruguay
+    "UZ" -> Uzbekistan
+    "VU" -> Vanuatu
+    "VE" -> Venezuela
+    "VN" -> Vietnam
+    "VG" -> British_Virgin_Islands
+    "VI" -> Virgin_Islands
+    "WF" -> Wallis_and_Futuna
+    "YE" -> Yemen
+    "ZM" -> Zambia
+    "ZW" -> Zimbabwe
+    other -> Other other
+
 countries :: Array (Tuple Country CountryPhone)
 countries =
   [ Tuple Afghanistan
-      { code: "af"
-      , dial_code: "93"
+      { dial_code: "93"
+      , code: "af"
       , format: Just "+__ (___) ________"
       }
   , Tuple Aland_Islands
@@ -987,12 +1242,12 @@ countries =
       , code: "KM"
       , format: Nothing
       }
-  , Tuple Congo
+  , Tuple Republic_of_the_Congo
       { dial_code: "+242"
       , code: "CG"
       , format: Nothing
       }
-  , Tuple Congo
+  , Tuple Democratic_Republic_of_the_Congo
       { dial_code: "+243"
       , code: "CD"
       , format: Nothing
@@ -1927,7 +2182,7 @@ countries =
       , code: "VN"
       , format: Nothing
       }
-  , Tuple Virgin_Islands
+  , Tuple British_Virgin_Islands
       { dial_code: "+1284"
       , code: "VG"
       , format: Nothing
