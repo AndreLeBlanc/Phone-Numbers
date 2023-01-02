@@ -6,8 +6,9 @@
   , "maybe"
   , "ordered-collections"
   , "prelude"
-  , "tuples"
+  , "strings"
   , "test-unit"
+  , "tuples"
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
