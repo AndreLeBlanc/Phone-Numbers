@@ -7,12 +7,15 @@ import Data.Array (foldl, replicate)
 import Data.Array.NonEmpty (catMaybes)
 import Data.Map (lookup)
 import Data.Maybe (Maybe(..), fromMaybe)
-import Data.String (length, uncons)
+import Data.String (length, take, drop, uncons, splitAt)
 import Data.String.CodePoints (singleton)
 import Data.String.Regex (match)
 import Data.String.Regex.Flags (global)
 import Data.String.Regex.Unsafe (unsafeRegex)
 
+{-
+  Retains only the digits in a string, returing Nothing if the resulting string is empty. 
+-}
 extractNums :: String -> Maybe String
 extractNums num =
   do
@@ -25,24 +28,12 @@ extractNums num =
 formatter :: CountryPhone -> String -> Maybe String
 formatter cp unformattedNum =
   let
-    genSpace :: Int -> String
-    genSpace len =
-      replicate (len - 1) "_"
-        # foldl (<>) ""
-
     makeFormat :: Maybe String
     makeFormat =
       do
         dc <- extractNums cp.dial_code
-        num <- extractNums unformattedNum
-        pure ("+" <> (genSpace (length dc)) <> "-" <> (genSpace (length num)))
-
-    -- shorter than format/Extra -
-    -- shorter than format/Extra -
-    -- shorter than format/Extra -
-    -- shorter than format/Extra -
-    -- shorter than format/Extra -
-    -- shorter than format/Extra -
+        "+" <> (replicate ((length dc) - 1) "_" # foldl (<>) "") <> " "
+          # pure
 
     getFormat :: Maybe String
     getFormat =
@@ -53,23 +44,56 @@ formatter cp unformattedNum =
     fillNum :: String -> String -> Maybe String
     fillNum form num =
       do
-        forCons <- uncons form
+        let forCons = splitAt 1 form
         numCons <- uncons num
-        case (singleton forCons.head) == "_" of
-          false -> (singleton forCons.head) <> (fillNum forCons.tail num # fromMaybe "")
-          true -> (singleton numCons.head) <> (fillNum forCons.tail numCons.tail # fromMaybe "")
+        case forCons.before == "_" || forCons.before == "" of
+          false -> forCons.before <> (fillNum forCons.after num # fromMaybe "")
+          true -> (singleton numCons.head) <> (fillNum forCons.after numCons.tail # fromMaybe "")
           # pure
+
+    removeDialCode :: String -> String -> Maybe String
+    removeDialCode rawNum dial =
+      do
+        nums <- extractNums rawNum
+        noDial <- case (take 1 rawNum == "+") && (take (length dial) nums) == dial of
+          true -> if length nums > length cp.dial_code then drop (length dial) nums # Just else Nothing
+          false ->
+            case (take 1 rawNum /= "+") && (take (length dial + 2) nums) == "00" <> dial of
+              true -> if length nums > length dial + 2 then drop (length dial + 2) nums # Just else Nothing
+              false -> Just nums
+        pure noDial
 
   in
     do
       form <- getFormat
       dial <- extractNums cp.dial_code
-      res <- fillNum form (dial <> unformattedNum)
+      withoutDialCode <- removeDialCode unformattedNum dial
+      res <- fillNum form (dial <> withoutDialCode)
       pure res
 
+{-
+  Formats a number using the dialcode and format used by given country. The number may already contain the
+  dialcode or 00 instead of the plus-sign. 
+
+  The output must contain more than the dialcode in order to return a Just. 
+  format Sweden "123542789" = "+46 12 354 27 89"
+  format Germany  "+49" = Nothing
+  
+  A multitude of additional examples can be found in test/Main.purs
+-}
 format :: Country -> String -> Maybe String
 format country unformattedNum =
-  case lookup country index of
-    Nothing -> Nothing
-    Just cp -> formatter cp unformattedNum
+  do
+    cp <- lookup country index
+    res <- formatter cp unformattedNum
+    pure res
 
+{-
+  Format a number using a custom dial code and format. 
+  Returns Nothing if dial or form are empty.
+-}
+customFormat :: String -> String -> String -> Maybe String
+customFormat dial form unformattedNum =
+  case form == "" of
+    false -> formatter { code: "XX", dial_code: dial, format: (Just form) } unformattedNum
+    true -> Nothing

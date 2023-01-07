@@ -1,7 +1,6 @@
 { name = "my-project"
 , dependencies =
   [ "arrays"
-  , "console"
   , "effect"
   , "maybe"
   , "ordered-collections"

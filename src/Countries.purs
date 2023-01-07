@@ -1010,62 +1010,62 @@ countries =
   , Tuple Aland_Islands
       { dial_code: "+358"
       , code: "AX"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Albania
       { dial_code: "+355"
       , code: "AL"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Algeria
       { dial_code: "+213"
       , code: "DZ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple American_Samoa
       { dial_code: "+1684"
       , code: "AS"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Andorra
       { dial_code: "+376"
       , code: "AD"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Angola
       { dial_code: "+244"
       , code: "AO"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Anguilla
       { dial_code: "+1264"
       , code: "AI"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Antarctica
       { dial_code: "+672"
       , code: "AQ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Antigua_and_Barbuda
       { dial_code: "+1268"
       , code: "AG"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Argentina
       { dial_code: "+54"
       , code: "AR"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Armenia
       { dial_code: "+374"
       , code: "AM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Aruba
       { dial_code: "+297"
       , code: "AW"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Australia
       { dial_code: "+61"
@@ -1075,37 +1075,37 @@ countries =
   , Tuple Austria
       { dial_code: "+43"
       , code: "AT"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Azerbaijan
       { dial_code: "+994"
       , code: "AZ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Bahamas
       { dial_code: "+1242"
       , code: "BS"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Bahrain
       { dial_code: "+973"
       , code: "BH"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Bangladesh
       { dial_code: "+880"
       , code: "BD"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Barbados
       { dial_code: "+1246"
       , code: "BB"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Belarus
       { dial_code: "+375"
       , code: "BY"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Belgium
       { dial_code: "+32"
@@ -1115,77 +1115,77 @@ countries =
   , Tuple Belize
       { dial_code: "+501"
       , code: "BZ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Benin
       { dial_code: "+229"
       , code: "BJ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Bermuda
       { dial_code: "+1441"
       , code: "BM"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Bhutan
       { dial_code: "+975"
       , code: "BT"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Bolivia
       { dial_code: "+591"
       , code: "BO"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Bosnia_and_Herzegovina
       { dial_code: "+387"
       , code: "BA"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Botswana
       { dial_code: "+267"
       , code: "BW"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Brazil
       { dial_code: "+55"
       , code: "BR"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple British_Indian_Ocean_Territory
       { dial_code: "+246"
       , code: "IO"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Brunei
       { dial_code: "+673"
       , code: "BN"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Bulgaria
       { dial_code: "+359"
       , code: "BG"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Burkina_Faso
       { dial_code: "+226"
       , code: "BF"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Burundi
       { dial_code: "+257"
       , code: "BI"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Cambodia
       { dial_code: "+855"
       , code: "KH"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Cameroon
       { dial_code: "+237"
       , code: "CM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Canada
       { dial_code: "+1"
@@ -1195,27 +1195,27 @@ countries =
   , Tuple Cape_Verde
       { dial_code: "+238"
       , code: "CV"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Cayman_Islands
       { dial_code: "+ 345"
       , code: "KY"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Central_African_Republic
       { dial_code: "+236"
       , code: "CF"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Chad
       { dial_code: "+235"
       , code: "TD"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Chile
       { dial_code: "+56"
       , code: "CL"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple China
       { dial_code: "+86"
@@ -1225,37 +1225,37 @@ countries =
   , Tuple Christmas_Island
       { dial_code: "+61"
       , code: "CX"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Cocos_Islands
       { dial_code: "+61"
       , code: "CC"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Colombia
       { dial_code: "+57"
       , code: "CO"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Comoros
       { dial_code: "+269"
       , code: "KM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Republic_of_the_Congo
       { dial_code: "+242"
       , code: "CG"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Democratic_Republic_of_the_Congo
       { dial_code: "+243"
       , code: "CD"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Cook_Islands
       { dial_code: "+682"
       , code: "CK"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Costa_Rica
       { dial_code: "+506"
@@ -1265,27 +1265,27 @@ countries =
   , Tuple Cote_dIvoire
       { dial_code: "+225"
       , code: "CI"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Croatia
       { dial_code: "+385"
       , code: "HR"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Cuba
       { dial_code: "+53"
       , code: "CU"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Cyprus
       { dial_code: "+357"
       , code: "CY"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Czech_Republic
       { dial_code: "+420"
       , code: "CZ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Denmark
       { dial_code: "+45"
@@ -1295,27 +1295,27 @@ countries =
   , Tuple Djibouti
       { dial_code: "+253"
       , code: "DJ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Dominica
       { dial_code: "+1767"
       , code: "DM"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Dominican_Republic
       { dial_code: "+1849"
       , code: "DO"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Ecuador
       { dial_code: "+593"
       , code: "EC"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Egypt
       { dial_code: "+20"
       , code: "EG"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple El_Salvador
       { dial_code: "+503"
@@ -1325,37 +1325,37 @@ countries =
   , Tuple Equatorial_Guinea
       { dial_code: "+240"
       , code: "GQ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Eritrea
       { dial_code: "+291"
       , code: "ER"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Estonia
       { dial_code: "+372"
       , code: "EE"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Ethiopia
       { dial_code: "+251"
       , code: "ET"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Falkland_Islands
       { dial_code: "+500"
       , code: "FK"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Faroe_Islands
       { dial_code: "+298"
       , code: "FO"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Fiji
       { dial_code: "+679"
       , code: "FJ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Finland
       { dial_code: "+358"
@@ -1370,27 +1370,27 @@ countries =
   , Tuple French_Guiana
       { dial_code: "+594"
       , code: "GF"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple French_Polynesia
       { dial_code: "+689"
       , code: "PF"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Gabon
       { dial_code: "+241"
       , code: "GA"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Gambia
       { dial_code: "+220"
       , code: "GM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Georgia
       { dial_code: "+995"
       , code: "GE"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Germany
       { dial_code: "+49"
@@ -1400,37 +1400,37 @@ countries =
   , Tuple Ghana
       { dial_code: "+233"
       , code: "GH"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Gibraltar
       { dial_code: "+350"
       , code: "GI"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Greece
       { dial_code: "+30"
       , code: "GR"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Greenland
       { dial_code: "+299"
       , code: "GL"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Grenada
       { dial_code: "+1473"
       , code: "GD"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Guadeloupe
       { dial_code: "+590"
       , code: "GP"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Guam
       { dial_code: "+1671"
       , code: "GU"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Guatemala
       { dial_code: "+502"
@@ -1440,22 +1440,22 @@ countries =
   , Tuple Guernsey
       { dial_code: "+44"
       , code: "GG"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Guinea
       { dial_code: "+224"
       , code: "GN"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Guinea_Bissau
       { dial_code: "+245"
       , code: "GW"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Guyana
       { dial_code: "+595"
       , code: "GY"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Haiti
       { dial_code: "+509"
@@ -1470,7 +1470,7 @@ countries =
   , Tuple Honduras
       { dial_code: "+504"
       , code: "HN"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Hong_Kong
       { dial_code: "+852"
@@ -1480,7 +1480,7 @@ countries =
   , Tuple Hungary
       { dial_code: "+36"
       , code: "HU"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Iceland
       { dial_code: "+354"
@@ -1495,17 +1495,17 @@ countries =
   , Tuple Indonesia
       { dial_code: "+62"
       , code: "ID"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Iran
       { dial_code: "+98"
       , code: "IR"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Iraq
       { dial_code: "+964"
       , code: "IQ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Ireland
       { dial_code: "+353"
@@ -1515,12 +1515,12 @@ countries =
   , Tuple Isle_of_Man
       { dial_code: "+44"
       , code: "IM"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Israel
       { dial_code: "+972"
       , code: "IL"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Italy
       { dial_code: "+39"
@@ -1530,7 +1530,7 @@ countries =
   , Tuple Jamaica
       { dial_code: "+1876"
       , code: "JM"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Japan
       { dial_code: "+81"
@@ -1540,112 +1540,112 @@ countries =
   , Tuple Jersey
       { dial_code: "+44"
       , code: "JE"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Jordan
       { dial_code: "+962"
       , code: "JO"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Kazakhstan
-      { dial_code: "+77"
+      { dial_code: "+7"
       , code: "KZ"
       , format: Just "+_ ___ ___-__-__"
       }
   , Tuple Kenya
       { dial_code: "+254"
       , code: "KE"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Kiribati
       { dial_code: "+686"
       , code: "KI"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple North_Korea
       { dial_code: "+850"
       , code: "KP"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple South_Korea
       { dial_code: "+82"
       , code: "KR"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Kuwait
       { dial_code: "+965"
       , code: "KW"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Kyrgyzstan
       { dial_code: "+996"
       , code: "KG"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Laos
       { dial_code: "+856"
       , code: "LA"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Latvia
       { dial_code: "+371"
       , code: "LV"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Lebanon
       { dial_code: "+961"
       , code: "LB"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Lesotho
       { dial_code: "+266"
       , code: "LS"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Liberia
       { dial_code: "+231"
       , code: "LR"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Libya
       { dial_code: "+218"
       , code: "LY"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Liechtenstein
       { dial_code: "+423"
       , code: "LI"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Lithuania
       { dial_code: "+370"
       , code: "LT"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Luxembourg
       { dial_code: "+352"
       , code: "LU"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Macao
       { dial_code: "+853"
       , code: "MO"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Macedonia
       { dial_code: "+389"
       , code: "MK"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Madagascar
       { dial_code: "+261"
       , code: "MG"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Malawi
       { dial_code: "+265"
       , code: "MW"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Malaysia
       { dial_code: "+60"
@@ -1655,107 +1655,107 @@ countries =
   , Tuple Maldives
       { dial_code: "+960"
       , code: "MV"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Mali
       { dial_code: "+223"
       , code: "ML"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Malta
       { dial_code: "+356"
       , code: "MT"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Marshall_Islands
       { dial_code: "+692"
       , code: "MH"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Martinique
       { dial_code: "+596"
       , code: "MQ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Mauritania
       { dial_code: "+222"
       , code: "MR"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Mauritius
       { dial_code: "+230"
       , code: "MU"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Mayotte
       { dial_code: "+262"
       , code: "YT"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Mexico
       { dial_code: "+52"
       , code: "MX"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Micronesia
       { dial_code: "+691"
       , code: "FM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Moldova
       { dial_code: "+373"
       , code: "MD"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Monaco
       { dial_code: "+377"
       , code: "MC"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Mongolia
       { dial_code: "+976"
       , code: "MN"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Montenegro
       { dial_code: "+382"
       , code: "ME"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Montserrat
       { dial_code: "+1664"
       , code: "MS"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Morocco
       { dial_code: "+212"
       , code: "MA"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Mozambique
       { dial_code: "+258"
       , code: "MZ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Myanmar
       { dial_code: "+95"
       , code: "MM"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Namibia
       { dial_code: "+264"
       , code: "NA"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Nauru
       { dial_code: "+674"
       , code: "NR"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Nepal
       { dial_code: "+977"
       , code: "NP"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Netherlands
       { dial_code: "+31"
@@ -1765,7 +1765,7 @@ countries =
   , Tuple Netherlands_Antilles
       { dial_code: "+599"
       , code: "AN"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple New_Caledonia
       { dial_code: "+687"
@@ -1775,37 +1775,37 @@ countries =
   , Tuple New_Zealand
       { dial_code: "+64"
       , code: "NZ"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Nicaragua
       { dial_code: "+505"
       , code: "NI"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Niger
       { dial_code: "+227"
       , code: "NE"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Nigeria
       { dial_code: "+234"
       , code: "NG"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Niue
       { dial_code: "+683"
       , code: "NU"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Norfolk_Island
       { dial_code: "+672"
       , code: "NF"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Northern_Mariana_Islands
       { dial_code: "+1670"
       , code: "MP"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Norway
       { dial_code: "+47"
@@ -1815,7 +1815,7 @@ countries =
   , Tuple Oman
       { dial_code: "+968"
       , code: "OM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Pakistan
       { dial_code: "+92"
@@ -1825,32 +1825,32 @@ countries =
   , Tuple Palau
       { dial_code: "+680"
       , code: "PW"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Palestinian_Territory
       { dial_code: "+970"
       , code: "PS"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Panama
       { dial_code: "+507"
       , code: "PA"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Papua_New_Guinea
       { dial_code: "+675"
       , code: "PG"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Paraguay
       { dial_code: "+595"
       , code: "PY"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Peru
       { dial_code: "+51"
       , code: "PE"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Philippines
       { dial_code: "+63"
@@ -1860,7 +1860,7 @@ countries =
   , Tuple Pitcairn
       { dial_code: "+872"
       , code: "PN"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Poland
       { dial_code: "+48"
@@ -1870,22 +1870,22 @@ countries =
   , Tuple Portugal
       { dial_code: "+351"
       , code: "PT"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Puerto_Rico
       { dial_code: "+1939"
       , code: "PR"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Qatar
       { dial_code: "+974"
       , code: "QA"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Romania
       { dial_code: "+40"
       , code: "RO"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Russia
       { dial_code: "+7"
@@ -1895,87 +1895,87 @@ countries =
   , Tuple Rwanda
       { dial_code: "+250"
       , code: "RW"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Reunion
       { dial_code: "+262"
       , code: "RE"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Saint_Barthelemy
       { dial_code: "+590"
       , code: "BL"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Saint_Helena
       { dial_code: "+290"
       , code: "SH"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Saint_Kitts
       { dial_code: "+1869"
       , code: "KN"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Saint_Lucia
       { dial_code: "+1758"
       , code: "LC"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Saint_Martin
       { dial_code: "+590"
       , code: "MF"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Saint_Pierre_and_Miquelon
       { dial_code: "+508"
       , code: "PM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Saint_Vincent
       { dial_code: "+1784"
       , code: "VC"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Samoa
       { dial_code: "+685"
       , code: "WS"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple San_Marino
       { dial_code: "+378"
       , code: "SM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Sao_Tome_and_Principe
       { dial_code: "+239"
       , code: "ST"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Saudi_Arabia
       { dial_code: "+966"
       , code: "SA"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Senegal
       { dial_code: "+221"
       , code: "SN"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Serbia
       { dial_code: "+381"
       , code: "RS"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Seychelles
       { dial_code: "+248"
       , code: "SC"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Sierra_Leone
       { dial_code: "+232"
       , code: "SL"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Singapore
       { dial_code: "+65"
@@ -1985,37 +1985,37 @@ countries =
   , Tuple Slovakia
       { dial_code: "+421"
       , code: "SK"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Slovenia
       { dial_code: "+386"
       , code: "SI"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Solomon_Islands
       { dial_code: "+677"
       , code: "SB"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Somalia
       { dial_code: "+252"
       , code: "SO"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple South_Africa
       { dial_code: "+27"
       , code: "ZA"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple South_Sudan
       { dial_code: "+211"
       , code: "SS"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple South_Georgia
       { dial_code: "+500"
       , code: "GS"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Spain
       { dial_code: "+34"
@@ -2025,27 +2025,27 @@ countries =
   , Tuple Sri_Lanka
       { dial_code: "+94"
       , code: "LK"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Sudan
       { dial_code: "+249"
       , code: "SD"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Suriname
       { dial_code: "+597"
       , code: "SR"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Svalbard
       { dial_code: "+47"
       , code: "SJ"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Swaziland
       { dial_code: "+268"
       , code: "SZ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Sweden
       { dial_code: "+46"
@@ -2060,57 +2060,57 @@ countries =
   , Tuple Syrian_Arab_Republic
       { dial_code: "+963"
       , code: "SY"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Taiwan
       { dial_code: "+886"
       , code: "TW"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Tajikistan
       { dial_code: "+992"
       , code: "TJ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Tanzania
       { dial_code: "+255"
       , code: "TZ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Thailand
       { dial_code: "+66"
       , code: "TH"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Timor_Leste
       { dial_code: "+670"
       , code: "TL"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Togo
       { dial_code: "+228"
       , code: "TG"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Tokelau
       { dial_code: "+690"
       , code: "TK"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Tonga
       { dial_code: "+676"
       , code: "TO"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Trinidad_and_Tobago
       { dial_code: "+1868"
       , code: "TT"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Tunisia
       { dial_code: "+216"
       , code: "TN"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Turkey
       { dial_code: "+90"
@@ -2120,32 +2120,32 @@ countries =
   , Tuple Turkmenistan
       { dial_code: "+993"
       , code: "TM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Turks_and_Caicos_Islands
       { dial_code: "+1649"
       , code: "TC"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Tuvalu
       { dial_code: "+688"
       , code: "TV"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Uganda
       { dial_code: "+256"
       , code: "UG"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Ukraine
       { dial_code: "+380"
       , code: "UA"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple United_Arab_Emirates
       { dial_code: "+971"
       , code: "AE"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple United_Kingdom
       { dial_code: "+44"
@@ -2160,57 +2160,57 @@ countries =
   , Tuple Uruguay
       { dial_code: "+598"
       , code: "UY"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Uzbekistan
       { dial_code: "+998"
       , code: "UZ"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Vanuatu
       { dial_code: "+678"
       , code: "VU"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Venezuela
       { dial_code: "+58"
       , code: "VE"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple Vietnam
       { dial_code: "+84"
       , code: "VN"
-      , format: Nothing
+      , format: Just "+__ "
       }
   , Tuple British_Virgin_Islands
       { dial_code: "+1284"
       , code: "VG"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Virgin_Islands
       { dial_code: "+1340"
       , code: "VI"
-      , format: Nothing
+      , format: Just "+_ ___ "
       }
   , Tuple Wallis_and_Futuna
       { dial_code: "+681"
       , code: "WF"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Yemen
       { dial_code: "+967"
       , code: "YE"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Zambia
       { dial_code: "+260"
       , code: "ZM"
-      , format: Nothing
+      , format: Just "+___ "
       }
   , Tuple Zimbabwe
       { dial_code: "+263"
       , code: "ZW"
-      , format: Nothing
+      , format: Just "+___ "
       }
   ]
 
