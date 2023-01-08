@@ -1,4 +1,4 @@
-{ name = "my-project"
+{ name = "Phone-Numbers"
 , dependencies =
   [ "arrays"
   , "effect"
